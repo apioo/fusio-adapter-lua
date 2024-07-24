@@ -1,0 +1,33 @@
+{
+  "name": "fusio/adapter-lua",
+  "description": "Write the endpoint logic in LUA",
+  "homepage": "https://www.fusio-project.org",
+  "keywords": ["fusio-adapter"],
+  "license": "Apache-2.0",
+  "authors": [
+    {
+      "name": "Christoph Kappestein",
+      "email": "christoph.kappestein@gmail.com",
+      "homepage": "https://chrisk.app"
+    }
+  ],
+  "require": {
+    "php": ">=8.1",
+    "ext-luasandbox": "*",
+    "fusio/engine": "^6.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^9.0",
+    "vimeo/psalm": "^5.9"
+  },
+  "autoload": {
+    "psr-4": {
+      "Fusio\\Adapter\\Lua\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Fusio\\Adapter\\Lua\\Tests\\": "tests/"
+    }
+  }
+}
