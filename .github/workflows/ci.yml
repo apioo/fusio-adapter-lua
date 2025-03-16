@@ -35,6 +35,8 @@ jobs:
           php-version: ${{ matrix.php-versions }}
           coverage: none
           extensions: luasandbox
+      - name: Install
+        run: sudo apt install php-luasandbox -y
       - name: Composer install
         run: composer install --no-interaction --no-ansi --no-progress
       - name: Run PHPUnit
