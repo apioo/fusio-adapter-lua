@@ -64,8 +64,8 @@ class WorkerLuaLocal extends ActionAbstract
         $code = $configuration->get('code');
 
         $sandbox = new \LuaSandbox();
-        $sandbox->setMemoryLimit(50 * 1024 * 1024);
-        $sandbox->setCPULimit(10);
+        $sandbox->setMemoryLimit(32 * 1024 * 1024);
+        $sandbox->setCPULimit(1);
 
         [$function] = $sandbox->loadString($code)->call();
 
