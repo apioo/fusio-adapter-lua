@@ -1,9 +1,9 @@
 <?php
 /*
- * Fusio
- * A web-application to create dynamically RESTful APIs
+ * Fusio is an open source API management platform which helps to create innovative API solutions.
+ * For the current version and information visit <https://www.fusio-project.org/>
  *
- * Copyright (C) 2015-2024 Christoph Kappestein <christoph.kappestein@gmail.com>
+ * Copyright (c) Christoph Kappestein <christoph.kappestein@gmail.com>
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU Affero General Public License as published by
