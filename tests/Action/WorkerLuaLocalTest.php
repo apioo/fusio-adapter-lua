@@ -57,5 +57,4 @@ LUA;
         $this->assertEquals([], $response->getHeaders());
         $this->assertEquals(['a' => true], $response->getBody());
     }
-
 }

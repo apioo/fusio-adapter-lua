@@ -21,7 +21,7 @@
 
 namespace Fusio\Adapter\Lua\Tests;
 
-use Fusio\Adapter\Util\Adapter;
+use Fusio\Adapter\Lua\Adapter;
 use Fusio\Engine\Test\EngineTestCaseTrait;
 use PHPUnit\Framework\TestCase;
 
@@ -35,4 +35,9 @@ use PHPUnit\Framework\TestCase;
 class LuaTestCase extends TestCase
 {
     use EngineTestCaseTrait;
+
+    protected function getAdapterClass(): string
+    {
+        return Adapter::class;
+    }
 }
