@@ -36,7 +36,7 @@ class WorkerLuaLocalTest extends LuaTestCase
     public function testHandle()
     {
         $code = <<<LUA
-return function foo (request, context, connector, response, dispatcher, logger)
+return function (request, context, connector, response, dispatcher, logger)
   data = {}
   data["request"] = request
   data["context"] = context
