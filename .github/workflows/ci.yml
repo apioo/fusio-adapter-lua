@@ -12,8 +12,9 @@ jobs:
       - name: Install PHP
         uses: shivammathur/setup-php@v2
         with:
-          php-version: 8.4
+          php-version: 8.3
           coverage: none
+          extensions: luasandbox
       - name: Composer install
         run: composer install --no-interaction --no-ansi --no-progress
       - name: Run Psalm
@@ -25,7 +26,6 @@ jobs:
       matrix:
         php-versions:
          - 8.3
-         - 8.4
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -34,8 +34,7 @@ jobs:
         with:
           php-version: ${{ matrix.php-versions }}
           coverage: none
-      - name: Install luasandbox
-        run: apt install php-luasandbox -y
+          extensions: luasandbox
       - name: Composer install
         run: composer install --no-interaction --no-ansi --no-progress
       - name: Run PHPUnit
